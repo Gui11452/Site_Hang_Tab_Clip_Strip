@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border-collapse: collapse;
+    font-family: var(--fonte) !important;
+}
+
+html{
+    width: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+:root{
+    --cor-principal: #f2b504;
+    --cor-secundaria: #313131;
+    --cor-branco: #fff;
+    --cor-preto: black;
+    --fonte: 'Noto Sans Lepcha', sans-serif;
+}
+
+.whats{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    transition: .3s;
+}
+
+.whats img{
+    width: 9rem;
+}
+
+.whats:hover{
+    transform: scale(1.05);
+}
+
+/* Cabeçalho - Início */
+
+.cabecalho{
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--cor-secundaria);
+    font-family: var(--fonte);
+    position: fixed;
+    top: 0;
+    box-shadow: 0.2rem 0.2rem 2rem rgba(255, 255, 255, 0.2);
+}
+
+.cabecalho-fake{
+    min-height: 13rem;
+    width: 100%;
+}
+
+.cabecalho>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cabecalho nav a{
+    color: var(--cor-secundaria);
+    background: var(--cor-principal);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.cabecalho nav a:hover{
+    transform: scale(1.05);
+}
+
+/* Cabeçalho - Fim */
+
+
+/* Container Home - Início */
+
+.container-home{
+    width: 100%;
+    padding: 2rem 0;
+    background: url('images/fundo.jpg');
+    background-size: cover;
+    font-family: var(--fonte);
+    border-bottom: 0.4rem solid var(--cor-principal);
+}
+
+.container-home>div{
+    width: 90%;
+    min-height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-home{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    max-width: 50rem;
+}
+
+.titulo-home h1{
+    font-size: 3rem;
+    color: var(--cor-principal);
+}
+
+.titulo-home p{
+    color: var(--cor-branco);
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+.titulo-home p::first-letter{
+    font-size: 3rem;
+    color: var(--cor-principal);
+}
+
+.titulo-home a{
+    background: var(--cor-principal);
+    color: var(--cor-secundaria);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition: .3s;
+    font-weight: bold;
+    max-width: 22rem;
+    text-align: center;
+}
+
+.titulo-home a:hover{
+    transform: scale(1.05);
+}
+
+/* Container Home - Fim */
+
+/* Container Índices - Início */
+
+.container-indices{
+    width: 100%;
+    padding: 3rem 0;
+    background: var(--cor-secundaria);
+    border-bottom: 0.4rem solid var(--cor-principal);
+}
+
+.container-indices>div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.indices{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.indices span{
+    border-radius: 50%;
+    background: var(--cor-principal);
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indices span img{
+    width: 70%;
+}
+
+.indices>div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.indices p, .indices h2{
+    color: var(--cor-branco);
+}
+
+/* Container Índices - Fim */
+
+/* Container Sobre Nós - Início */
+
+.container-sobre-nos{
+    width: 100%;
+    padding: 4rem 0;
+    font-family: var(--fonte);
+    border-bottom: 0.4rem solid var(--cor-principal);
+}
+
+.container-sobre-nos>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15rem;
+}
+
+.sobre-nos-texto h1{
+    color: var(--cor-principal);
+    font-size: 4rem;
+}
+
+.sobre-nos-texto{
+    max-width: 60rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.sobre-nos-texto p{
+    font-size: 1.6rem;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.sobre-nos-imagem img{
+    width: 40rem;
+}
+
+/* Container Sobre Nós - Fim */
+
+/* Container Hang Tab e Clip Strip - Início */
+
+.container-hang-tab, .container-clip-strip{
+    width: 100%;
+    padding: 5rem 0;
+    border-bottom: 0.4rem solid var(--cor-principal);
+}
+
+.container-hang-tab>div, .container-clip-strip>div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.informacoes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.informacoes h1{
+    font-size: 5rem;
+    color: var(--cor-branco);
+    background: var(--cor-principal);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.informacoes p{
+    max-width: 70rem;
+    text-align: center;
+}
+
+.aplicacoes{
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.aplicacoes h1{
+    font-size: 5rem;
+    color: var(--cor-principal);
+}
+
+.fotos{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.fotos>div{
+    background-size: cover;
+    width: 40rem;
+    height: 30rem;
+}
+
+.container-hang-tab .fotos>div:nth-child(1){
+    background: url('images/hangtab1.png');
+}
+
+.container-hang-tab .fotos>div:nth-child(2){
+    background: url('images/hangtab2.png');
+}
+
+.container-hang-tab .fotos>div:nth-child(3){
+    background: url('images/hangtab3.png');
+}
+
+.container-hang-tab .fotos>div:nth-child(4){
+    background: url('images/hangtab4.png');
+}
+
+.container-hang-tab .fotos>div:nth-child(5){
+    background: url('images/hangtab5.png');
+}
+
+.container-hang-tab .fotos>div:nth-child(6){
+    background: url('images/hangtab6.png');
+}
+
+.container-clip-strip .fotos>div:nth-child(1){
+    background: url('images/clipstrip1.jpeg');
+}
+
+.container-clip-strip .fotos>div:nth-child(2){
+    background: url('images/clipstrip2.jpeg');
+}
+
+.container-clip-strip .fotos>div:nth-child(3){
+    background: url('images/clipstrip3.jpeg');
+}
+
+.container-clip-strip .fotos>div:nth-child(4){
+    background: url('images/clipstrip4.jpeg');
+}
+
+.container-clip-strip .fotos>div:nth-child(5){
+    background: url('images/clipstrip5.jpeg');
+}
+
+.container-clip-strip .fotos>div:nth-child(6){
+    background: url('images/clipstrip6.jpeg');
+}
+
+/* Container Hang Tab e Clip Strip - Fim */
+
+
+/* Container Rodapé - Início */
+
+.container-contatos{
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--cor-secundaria);
+}
+
+.container-contatos>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.coluna-rodape{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.coluna-rodape p{
+    max-width: 30rem;
+    text-align: center;
+}
+
+.coluna-rodape p, .coluna-rodape a{
+    color: var(--cor-branco);
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.coluna-rodape a{
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.coluna-rodape a:hover{
+    transform: scale(1.05);
+}
+
+.coluna-rodape img{
+    width: 2rem;
+}
+
+.coluna-rodape h1{
+    color: var(--cor-principal);
+}
+
+.coluna-rodape form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.coluna-rodape form input{
+    width: 100%;
+    border: 0.2rem solid var(--cor-secundaria);
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.coluna-rodape form input::placeholder{
+    font-style: italic;
+}
+
+.coluna-rodape form input:last-child{
+    background: var(--cor-principal);
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.coluna-rodape form input:last-child:hover{
+    transform: scale(1.02);
+}
+
+.copyright{
+    padding: 3rem 0 2rem 0;
+    color: var(--cor-branco);
+    display: flex;
+    flex-flow: row wrap !important;
+    gap: 2rem !important;
+    justify-content: space-between !important;
+}
+
+.copyright a{
+    color: var(--cor-branco);
+    transition: .3s;
+}
+
+.copyright a:hover{
+    transform: scale(1.05);
+}
+
+/* Container Rodapé - Fim */
